@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://1y1qj1tmg03r"]
+[gd_scene load_steps=2 format=3 uid="uid://1y1qj1tmg03r"]
+
+[sub_resource type="TileSet" id="TileSet_2y7ty"]
+tile_size = Vector2i(32, 32)
 
 [node name="World" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_2y7ty")
+rendering_quadrant_size = 32
