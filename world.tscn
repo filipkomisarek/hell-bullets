@@ -1,7 +1,71 @@
-[gd_scene load_steps=2 format=3 uid="uid://1y1qj1tmg03r"]
+[gd_scene load_steps=20 format=3 uid="uid://1y1qj1tmg03r"]
+
+[ext_resource type="Texture2D" uid="uid://mg2hcchv7plo" path="res://assets/floor tiles/cobble_blood_1_old.png" id="1_wdm48"]
+[ext_resource type="Texture2D" uid="uid://deflswf1jjtx0" path="res://assets/floor tiles/cobble_blood_2_old.png" id="2_kphp0"]
+[ext_resource type="Texture2D" uid="uid://djgub16hwdq4d" path="res://assets/floor tiles/cobble_blood_3_new.png" id="3_i23jy"]
+[ext_resource type="Texture2D" uid="uid://cg77rrwiscxh7" path="res://assets/floor tiles/crystal_floor_2.png" id="4_tfc54"]
+[ext_resource type="Texture2D" uid="uid://b0tn10tla4row" path="res://assets/floor tiles/dirt_0_old.png" id="5_h3bt1"]
+[ext_resource type="Texture2D" uid="uid://bm8vxongcqdcb" path="res://assets/floor tiles/dirt_2_new.png" id="6_psu4r"]
+[ext_resource type="Texture2D" uid="uid://cbhfav5yvwwob" path="res://assets/floor tiles/dirt_full_new.png" id="7_5fnol"]
+[ext_resource type="Texture2D" uid="uid://dg12x5brlv6bg" path="res://assets/floor tiles/floor_sand_stone_4.png" id="8_n7870"]
+[ext_resource type="Texture2D" uid="uid://djgijx24qghsp" path="res://assets/floor tiles/floor_sand_stone_5.png" id="9_cb7su"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4w1l2"]
+texture = ExtResource("1_wdm48")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3a18"]
+texture = ExtResource("2_kphp0")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_533fx"]
+texture = ExtResource("3_i23jy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_thvet"]
+texture = ExtResource("4_tfc54")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_potql"]
+texture = ExtResource("5_h3bt1")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6x0o"]
+texture = ExtResource("6_psu4r")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rbs34"]
+texture = ExtResource("7_5fnol")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yhc7o"]
+texture = ExtResource("8_n7870")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_piutx"]
+texture = ExtResource("9_cb7su")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_2y7ty"]
 tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_4w1l2")
+sources/1 = SubResource("TileSetAtlasSource_a3a18")
+sources/2 = SubResource("TileSetAtlasSource_533fx")
+sources/3 = SubResource("TileSetAtlasSource_thvet")
+sources/4 = SubResource("TileSetAtlasSource_potql")
+sources/5 = SubResource("TileSetAtlasSource_l6x0o")
+sources/6 = SubResource("TileSetAtlasSource_rbs34")
+sources/7 = SubResource("TileSetAtlasSource_yhc7o")
+sources/8 = SubResource("TileSetAtlasSource_piutx")
 
 [node name="World" type="Node2D"]
 
