@@ -3,6 +3,7 @@ extends CharacterBody2D
 var speed: int = 75
 # defalut direction that player alwayes looing down at the beginning
 var direction: Vector2 = Vector2(0,1)
+@onready var bullet = preload("res://Player/bullet.tscn")
 
 func _physics_process(delta: float) -> void:
 	# get access bt vector2d to left, right, up and down movement and normalized it
@@ -30,6 +31,14 @@ func _physics_process(delta: float) -> void:
 		get_node("Player").frame = 2
 		get_node("Player").flip_h = false
 		direction = inputDir
+		
+	if Input.is_action_just_pressed("Shoot"):
+		# creat bullet
+		var bulletTemp = bullet.instantiate()
+		# add velocity to bullet in looking direction
+		bulletTemp.velocity = direction*100
+		# add bullet
+		add_child(bulletTemp)
 		
 	velocity = inputDir * speed
 	move_and_slide()
